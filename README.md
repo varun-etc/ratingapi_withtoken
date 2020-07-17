@@ -96,7 +96,8 @@ Navigate to heroku URL with the API method to test it
 |heroku config:set TIMES=2|To set the config var on Heroku.|
 
 **Note:**
-For cleaning the heroku repo use `heroku repo:reset -a appname` 
+- For cleaning the heroku repo use `heroku repo:reset -a appname`.
+- Click [Here](https://devcenter.heroku.com/articles/getting-started-with-nodejs) for nodejs getting started.
 
 ## Heroku logs:
 - heroku logs  or heroku logs -n 200 //fetch your app’s most recent logs
