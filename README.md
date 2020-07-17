@@ -54,19 +54,19 @@ Navigate to heroku URL with the API method to test it
 
 - process.env.BFO_FEEDBACKOBJ_RECORDTYPEID
 
-- process.env.LOGIN_URL
+- process.env.BFO_LOGIN_URL
 
-- process.env.PREPROD_USER
+- process.env.BFO_USERNAME
 
-- process.env.PREPROD_PASSWORD
+- process.env.BFO_PASSWORD
 
-- process.env.PREPROD_CLIENT_ID 
+- process.env.BFO_CLIENT_ID 
 
-- process.env.PREPROD_CLIENT_SECRET
+- process.env.BFO_CLIENT_SECRET
 
-- process.env.ACCESS_TOKEN  //configure some dummy token node js code will pick up the token from login API automatically. 
+- process.env.BFO_ACCESS_TOKEN  //configure some dummy token node js code will pick up the token from login API automatically. 
 
-- process.env.INSTANCE_URL // currently using static instance URL also node.js code picks the instance url from login API  if it is changed for any reason.
+- process.env.BFO_INSTANCE_URL // currently using static instance URL also node.js code picks the instance url from login API  if it is changed for any reason.
 
 **Google CAPTCHA configs:**
 
