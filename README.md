@@ -94,6 +94,7 @@ Navigate to heroku URL with the API method to test it
 |git push heroku master| Deploy your code to heroku. |
 
 **Note:
+
 For cleaning the heroku repo use `heroku repo:reset -a appname` 
 
 ## Heroku logs:
