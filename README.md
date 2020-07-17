@@ -92,6 +92,8 @@ Navigate to heroku URL with the API method to test it
 | heroku create | When you create an app, a git remote (called heroku) is also created and associated with your local git repository. Alternatively clone the existing repository using `heroku git:clone -a app-name`.|
 |git add/rm & git commit -m "commit message"| Update the repo and commit the changes |
 |git push heroku master| Deploy your code to heroku. |
+|heroku config| View the config vars that is set using `heroku config:set TIMES=2`.|
+|heroku config:set TIMES=2|To set the config var on Heroku.|
 
 **Note:**
 For cleaning the heroku repo use `heroku repo:reset -a appname` 
