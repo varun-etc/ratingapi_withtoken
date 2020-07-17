@@ -88,10 +88,8 @@ Navigate to heroku URL with the API method to test it
 ## Heroku commands reference
 | Command | Description |
 | --------------- | ------ |
-| heroku login |This command opens your web browser to the Heroku login page. If your browser is already logged in to Heroku, simply click the Log in button displayed on the page. This authentication is required for both the heroku and git commands to work correctly. |
-| heroku create | When you create an app, a git remote (called heroku) is also created and associated with your local git repository.
-
-Heroku generates a random name (in this case sharp-rain-871) for your app, or you can pass a parameter to specify your own app name.|
+| heroku login |This command opens your web browser to the Heroku login page. This authentication is required for both the heroku and git commands to work correctly. |
+| heroku create | When you create an app, a git remote (called heroku) is also created and associated with your local git repository.|
 
 
 ## Heroku logs:
