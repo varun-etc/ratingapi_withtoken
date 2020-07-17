@@ -89,7 +89,7 @@ Navigate to heroku URL with the API method to test it
 | Command | Description |
 | --------------- | ------ |
 | heroku login |This command opens your web browser to the Heroku login page. This authentication is required for both the heroku and git commands to work correctly. |
-| heroku create | When you create an app, a git remote (called heroku) is also created and associated with your local git repository.|
+| heroku create | When you create an app, a git remote (called heroku) is also created and associated with your local git repository. Alternatively clone the existing repository using `heroku git:clone -a app-name`.|
 
 
 ## Heroku logs:
