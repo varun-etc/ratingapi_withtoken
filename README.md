@@ -97,6 +97,7 @@ Navigate to heroku URL with the API method to test it
 
 **Note:**
 - For cleaning the heroku repo use `heroku repo:reset -a appname`.
+- For restarting dynos `heroku dyno:restart` [Click](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-dyno-restart-dyno) for more.
 - Click [Here](https://devcenter.heroku.com/articles/getting-started-with-nodejs) for nodejs getting started.
 
 ## Heroku logs:
