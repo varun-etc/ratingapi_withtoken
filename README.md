@@ -93,8 +93,7 @@ Navigate to heroku URL with the API method to test it
 |git add/rm & git commit -m "commit message"| Update the repo and commit the changes |
 |git push heroku master| Deploy your code to heroku. |
 
-**Note:
-
+**Note:**
 For cleaning the heroku repo use `heroku repo:reset -a appname` 
 
 ## Heroku logs:
