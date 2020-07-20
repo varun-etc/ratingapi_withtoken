@@ -107,7 +107,10 @@ Navigate to heroku URL with the API method to test it
 **[Filtering](https://devcenter.heroku.com/articles/logging#filtering) logs:**
 - heroku logs --dyno router  //route logs
 - heroku logs --source app //web app logs
-
+**Note:**
+- Add [logzio](https://docs.logz.io/shipping/log-sources/heroku.html) logs drain 
+`heroku drains:add "http://<<LISTENER-HOST>>:8081?token=<<SHIPPING-TOKEN>>" -a <<HEROKU-APP-NAME>>` 
+- Access the logzio [live tail](https://app.logz.io/) for real time logs
 
 ## Tech
 - NodeJS
