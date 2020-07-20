@@ -64,9 +64,9 @@ Navigate to heroku URL with the API method to test it
 
 - process.env.BFO_CLIENT_SECRET
 
-- process.env.BFO_ACCESS_TOKEN  //configure some dummy token node js code will pick up the token from login API automatically. 
+- process.env.BFO_ACCESS_TOKEN  ***configure dummy token node js code will pick up the token from login API automatically.***
 
-- process.env.BFO_INSTANCE_URL // currently using static instance URL also node.js code picks the instance url from login API  if it is changed for any reason.
+- process.env.INSTANCE_URL ***currently using static instance URL also node.js code picks the instance url from login API  if it is changed for any reason.***
 
 **Google CAPTCHA configs:**
 
@@ -87,7 +87,7 @@ Navigate to heroku URL with the API method to test it
 
 ## Heroku commands reference
 | Command | Description |
-| --------------- | ------ |
+| ------ | ------ |
 | heroku login |This command opens your web browser to the Heroku login page. This authentication is required for both the heroku and git commands to work correctly. |
 | heroku create | When you create an app, a git remote (called heroku) is also created and associated with your local git repository. Alternatively clone the existing repository using `heroku git:clone -a app-name`.|
 |git add/rm & git commit -m "commit message"| Update the repo and commit the changes |
@@ -101,17 +101,18 @@ Navigate to heroku URL with the API method to test it
 - Click [Here](https://devcenter.heroku.com/articles/getting-started-with-nodejs) for nodejs getting started.
 
 ## Heroku logs:
-- heroku logs  or heroku logs -n 200 //fetch your app’s most recent logs
-- heroku logs –tail  //real-time tail displays recent logs
+- `heroku logs`  or `heroku logs -n 200` to fetch your app’s most recent logs
+- `heroku logs –tail`  for real-time logs
 
 **[Filtering](https://devcenter.heroku.com/articles/logging#filtering) logs:**
-- heroku logs --dyno router  //route logs
-- heroku logs --source app //web app logs
+- `heroku logs --dyno router` for route logs
+- `heroku logs --source app` for app logs
 
 **Note:**
 - Add [logzio](https://docs.logz.io/shipping/log-sources/heroku.html) logs drain 
-`heroku drains:add "http://<<LISTENER-HOST>>:8081?token=<<SHIPPING-TOKEN>>" -a <<HEROKU-APP-NAME>>` 
+`heroku drains:add "http://[<<LISTENER-HOST>>](https://docs.logz.io/user-guide/accounts/account-region.html):8081?token=<<SHIPPING-TOKEN>>" -a <<HEROKU-APP-NAME>>` 
 - Access the logzio [live tail](https://app.logz.io/) for real time logs
+
 
 ## Tech
 - NodeJS
