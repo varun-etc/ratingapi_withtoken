@@ -110,7 +110,7 @@ Navigate to heroku URL with the API method to test it
 
 **Note:**
 - Add [logzio](https://docs.logz.io/shipping/log-sources/heroku.html) logs drain 
-`heroku drains:add "http://[<<LISTENER-HOST>>](https://docs.logz.io/user-guide/accounts/account-region.html):8081?token=<<SHIPPING-TOKEN>>" -a <<HEROKU-APP-NAME>>` 
+`heroku drains:add "http://<<LISTENER-HOST>>:8081?token=<<SHIPPING-TOKEN>>" -a <<HEROKU-APP-NAME>>` 
 - Access the logzio [live tail](https://app.logz.io/) for real time logs
 
 ## Tech
