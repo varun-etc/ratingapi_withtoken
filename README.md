@@ -1,3 +1,4 @@
+
 # FAQ API's
 
 This repository  Contains custom Rest FAQ API's which will be used by web components on SE.COM. The FAQ details are retrieved from bFO based on the path param values. The API's used are
@@ -46,7 +47,6 @@ $ git push heroku master
 Navigate to heroku URL with the API method to test it
 ```
 ## Environmental Variables setup (Used in Heroku and Local )
-- Configure ENV vars in apps heroku dashboard Click [here](https://devcenter.heroku.com/articles/config-vars)
 
 **BFO configs**:
 
@@ -66,7 +66,7 @@ Navigate to heroku URL with the API method to test it
 
 - process.env.BFO_ACCESS_TOKEN  ***configure dummy token node js code will pick up the token from login API automatically.***
 
-- process.env.INSTANCE_URL ***currently using static instance URL also node.js code picks the instance url from login API  if it is changed for any reason.***
+- process.env.BFO_INSTANCE_URL ***currently using static instance URL also node.js code picks the instance url from login API  if it is changed for any reason.***
 
 **Google CAPTCHA configs:**
 
@@ -84,6 +84,10 @@ Navigate to heroku URL with the API method to test it
 
 **Cors allowed domains:**
 - process.env.ALLOWED_ORIGNS
+
+**Note:**
+- `heroku config:set GITHUB_USERNAME=joesmith` to set the env var from heroku-cli
+- `heroku config` list config vars, `heroku config:get GITHUB_USERNAME` get env var [more](https://devcenter.heroku.com/articles/config-vars)
 
 ## Heroku commands reference
 | Command | Description |
